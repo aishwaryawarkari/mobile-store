@@ -12,8 +12,9 @@ class Cart extends Component {
     return (
       <section>
         <ProductConsumer>
-          {value => {
+          {(value) => {
             const { cart } = value;
+            console.log({ cart });
             if (cart.length > 0) {
               return (
                 <React.Fragment>
